@@ -1,5 +1,5 @@
 import "bootstrap/dist/css/bootstrap.min.css";
-import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+import { BrowserRouter as Routes, Route, Link } from "react-router-dom";
 import TutorialList from "./TutorialList";
 import AddTutorial from "./AddTutorial";
 import Tutorial from "./Tutorial";
