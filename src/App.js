@@ -1,10 +1,17 @@
 import React from "react";
-import logo from "./logo.svg";
-import { Counter } from "./features/counter/Counter";
 import "./App.css";
+import "bootstrap/dist/css/bootstrap.min.css";
+import { BrowserRouter as Router } from "react-router-dom";
+import Navbar from "./components/Navbar";
 
 function App() {
-  return <div className="App">hey</div>;
+  return (
+    <Router>
+      <div className="App">
+        <Navbar />
+      </div>
+    </Router>
+  );
 }
 
 export default App;
