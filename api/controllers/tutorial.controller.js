@@ -57,7 +57,7 @@ exports.findAll = (req, res) => {
 ///////
 // Find a single Tutorial with an id
 exports.findOne = (req, res) => {
-  const id = req.params._id;
+  const id = req.params.id;
 
   Tutorial.findById(id)
     .then((data) => {
@@ -81,6 +81,8 @@ exports.update = (req, res) => {
   }
 
   const id = req.params.id;
+
+  console.log(req.body);
 
   Tutorial.findByIdAndUpdate(id, req.body, { useFindAndModify: false })
     .then((data) => {
